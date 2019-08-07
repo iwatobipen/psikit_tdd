@@ -22,14 +22,12 @@ install:
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n testenv python=3.6
   - conda init bash
-  - source .bashrc
   #- . ${HOME}/miniconda3/etc/profile.d/conda.sh
   - conda activate testenv
   - conda install -c conda-forge rdkit -y
   - conda install -c psi4 psi4 -y
   - conda install -c conda-forge pytest -y
-  - python setup.py install
 
 script:
   # Your test script goes here
-  travis_wait 30 pytest 
+  travis_wait 30 $HOME/miniconda/bin/pytest 
