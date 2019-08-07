@@ -29,4 +29,4 @@ install:
 
 script:
   # Your test script goes here
-  travis_wait 30 $HOME/miniconda/bin/pytest 
+  travis_wait 30 pytest 
