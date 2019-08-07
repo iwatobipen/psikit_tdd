@@ -20,8 +20,8 @@ install:
   - conda info -a
 
   # Replace dep1 dep2 ... with your dependencies
-  - conda create -q -n test-environment python=3.6
-  - source activate test-environmenti
+  - conda create -q -n testenv python=3.6
+  - conda activate testenv
   - conda install -c conda-forge rdkit -y
   - conda install -c psi4 psi4 -y
   - conda install -c conda-forge pytest -y
