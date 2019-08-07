@@ -1,4 +1,4 @@
-language: python
+language: c
 python:
   # We don't actually use the Travis Python, but this keeps it organized.
   - "3.6"
@@ -22,8 +22,8 @@ install:
   # Replace dep1 dep2 ... with your dependencies
   - conda create --yes -n testenv python=3.6
   - source activate testenv
-  - conda install -c conda-forge rdkit -y
   - conda install -c psi4 psi4 -y
+  - conda install -c conda-forge rdkit -y
   - conda install -c conda-forge pytest -y
 
 script:
