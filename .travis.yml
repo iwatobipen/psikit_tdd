@@ -20,10 +20,10 @@ install:
   - conda info -a
 
   # Replace dep1 dep2 ... with your dependencies
-  - conda create -q -n testenv python=3.6
+  #- conda create -q -n testenv python=3.6
   - conda init bash
-  - . ${HOME}/miniconda3/etc/profile.d/conda.sh
-  - conda activate testenv
+  #- . ${HOME}/miniconda3/etc/profile.d/conda.sh
+  #- conda activate testenv
   - conda install -c conda-forge rdkit -y
   - conda install -c psi4 psi4 -y
   - conda install -c conda-forge pytest -y
