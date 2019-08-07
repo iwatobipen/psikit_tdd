@@ -22,9 +22,9 @@ install:
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION dep1 dep2 ...
   - source activate test-environmenti
-  - conda install -c conda-forge rdkit
-  - conda install -c psi4 psi4
-  - conda install -c conda-forge pytest
+  - conda install -c conda-forge rdkit -y
+  - conda install -c psi4 psi4 -y
+  - conda install -c conda-forge pytest -y
   - python setup.py install
 
 script:
