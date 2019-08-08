@@ -25,7 +25,6 @@ install:
   - conda install -c psi4 psi4 -y
   - conda install -c conda-forge rdkit -y
   - conda install -c conda-forge pytest -y
-  - pip install -e .
 
 script:
   # Your test script goes here
